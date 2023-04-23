@@ -9,7 +9,7 @@ This module defines the general configuration of the environment. It includes pa
 configuring the environment instances, viewer settings, and simulation parameters.
 """
 
-from omeegaconf import MISSING
+from omegaconf import MISSING
 #from dataclasses import MISSING
 from typing import Tuple
 
