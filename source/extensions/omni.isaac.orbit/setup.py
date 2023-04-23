@@ -8,7 +8,7 @@
 import os
 import toml
 
-from setuptools import setup
+from setuptools import setup, find_namespace_packages
 
 # Obtain the extension data from the extension.toml file
 EXTENSION_PATH = os.path.dirname(os.path.realpath(__file__))
@@ -39,7 +39,7 @@ setup(
     include_package_data=True,
     python_requires=">=3.7.*",
     install_requires=INSTALL_REQUIRES,
-    packages=["omni.isaac.orbit"],
+    packages=find_namespace_packages,
     classifiers=["Natural Language :: English", "Programming Language :: Python :: 3.7"],
     zip_safe=False,
 )
