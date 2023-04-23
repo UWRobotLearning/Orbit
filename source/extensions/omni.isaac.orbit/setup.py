@@ -15,6 +15,10 @@ EXTENSION_PATH = os.path.dirname(os.path.realpath(__file__))
 # Read the extension.toml file
 EXTENSION_TOML_DATA = toml.load(os.path.join(EXTENSION_PATH, "config", "extension.toml"))
 
+SETUP_REQUIRES = [
+    "toml",
+]
+
 # Minimum dependencies required prior to installation
 INSTALL_REQUIRES = [
     # generic
@@ -38,6 +42,7 @@ setup(
     license="BSD-3-Clause",
     include_package_data=True,
     python_requires=">=3.7.*",
+    setup_requires=SETUP_REQUIRES,
     install_requires=INSTALL_REQUIRES,
     packages=find_namespace_packages(),
     classifiers=["Natural Language :: English", "Programming Language :: Python :: 3.7"],
