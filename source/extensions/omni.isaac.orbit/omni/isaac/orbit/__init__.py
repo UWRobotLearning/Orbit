@@ -12,7 +12,7 @@ import os
 import toml
 
 # Conveniences to other module directories via relative paths
-ORBIT_EXT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
+ORBIT_EXT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
 """Path to the extension source directory."""
 
 ORBIT_METADATA = toml.load(os.path.join(ORBIT_EXT_DIR, "config", "extension.toml"))
