@@ -25,7 +25,7 @@ INSTALL_REQUIRES = [
     "protobuf==3.20.2",
     # gym
     #"gym==0.21.0",
-    "gym" # relax gym dep
+    "gym", # relax gym dep
     "importlib-metadata~=4.13.0",
     # data collection
     "h5py",
